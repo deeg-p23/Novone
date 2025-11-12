@@ -1,0 +1,90 @@
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\CUDA\CAMERA.CU
+setlocal
+cd "C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\sutil\CMakeFiles\sutil.dir\__\cuda"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D check_dependencies:BOOL=ON -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools/MSVC/14.44.35207/bin/Hostx64/x64" -D build_configuration:STRING=Release -D "generated_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_camera.cu.optixir" -D "generated_cubin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_camera.cu.optixir.cubin.txt" -D "generated_fatbin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_camera.cu.optixir.fatbin.txt" -P "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_camera.cu.optixir.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\CUDA\GEOMETRY.CU
+setlocal
+cd "C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\sutil\CMakeFiles\sutil.dir\__\cuda"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D check_dependencies:BOOL=ON -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools/MSVC/14.44.35207/bin/Hostx64/x64" -D build_configuration:STRING=Release -D "generated_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_geometry.cu.optixir" -D "generated_cubin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_geometry.cu.optixir.cubin.txt" -D "generated_fatbin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_geometry.cu.optixir.fatbin.txt" -P "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_geometry.cu.optixir.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\CUDA\SHADING.CU
+setlocal
+cd "C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\sutil\CMakeFiles\sutil.dir\__\cuda"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D check_dependencies:BOOL=ON -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools/MSVC/14.44.35207/bin/Hostx64/x64" -D build_configuration:STRING=Release -D "generated_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_shading.cu.optixir" -D "generated_cubin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_shading.cu.optixir.cubin.txt" -D "generated_fatbin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_shading.cu.optixir.fatbin.txt" -P "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_shading.cu.optixir.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\CUDA\SPHERE.CU
+setlocal
+cd "C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\sutil\CMakeFiles\sutil.dir\__\cuda"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D check_dependencies:BOOL=ON -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools/MSVC/14.44.35207/bin/Hostx64/x64" -D build_configuration:STRING=Release -D "generated_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_sphere.cu.optixir" -D "generated_cubin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_sphere.cu.optixir.cubin.txt" -D "generated_fatbin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_sphere.cu.optixir.fatbin.txt" -P "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_sphere.cu.optixir.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\CUDA\WHITTED.CU
+setlocal
+cd "C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\sutil\CMakeFiles\sutil.dir\__\cuda"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D check_dependencies:BOOL=ON -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools/MSVC/14.44.35207/bin/Hostx64/x64" -D build_configuration:STRING=Release -D "generated_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_whitted.cu.optixir" -D "generated_cubin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_whitted.cu.optixir.cubin.txt" -D "generated_fatbin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/sutil_generated_whitted.cu.optixir.fatbin.txt" -P "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_whitted.cu.optixir.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\SUTIL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/23die/Projects/CG Projects/OptiX/Novone" "-BC:/Users/23die/Projects/CG Projects/OptiX/Novone/build" --check-stamp-file "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/CMake/FindCUDA/run_nvcc.cmake
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/deegMontecarlo/CMakeFiles/deegMontecarlo.dir/deegMontecarlo_generated_draw_solid_color.cu.optixir.depend
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/deegMontecarlo/CMakeLists.txt

@@ -1,0 +1,26 @@
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\DEEGMONTECARLO\DRAW_SOLID_COLOR.CU
+setlocal
+cd "C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\deegMontecarlo\CMakeFiles\deegMontecarlo.dir"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D check_dependencies:BOOL=ON -D "CCBIN:PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools/MSVC/14.44.35207/bin/Hostx64/x64" -D build_configuration:STRING=Release -D "generated_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/deegMontecarlo_generated_draw_solid_color.cu.optixir" -D "generated_cubin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/deegMontecarlo_generated_draw_solid_color.cu.optixir.cubin.txt" -D "generated_fatbin_file:STRING=C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/ptx/Release/deegMontecarlo_generated_draw_solid_color.cu.optixir.fatbin.txt" -P "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/deegMontecarlo/CMakeFiles/deegMontecarlo.dir//deegMontecarlo_generated_draw_solid_color.cu.optixir.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\DEEGMONTECARLO\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/23die/Projects/CG Projects/OptiX/Novone" "-BC:/Users/23die/Projects/CG Projects/OptiX/Novone/build" --check-stamp-file "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/deegMontecarlo/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

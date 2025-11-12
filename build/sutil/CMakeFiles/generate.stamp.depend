@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/CMake/FindCUDA/run_nvcc.cmake
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_camera.cu.optixir.depend
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_geometry.cu.optixir.depend
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_shading.cu.optixir.depend
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_sphere.cu.optixir.depend
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/sutil/CMakeFiles/sutil.dir/__/cuda/sutil_generated_whitted.cu.optixir.depend
+C:/Users/23die/Projects/CG Projects/OptiX/Novone/sutil/CMakeLists.txt

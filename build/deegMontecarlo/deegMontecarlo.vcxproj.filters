@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\deegMontecarlo\deegMontecarlo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda\helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\deegMontecarlo\deegMontecarlo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\deegMontecarlo\draw_solid_color.cu">
+      <Filter>CUDA Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\deegMontecarlo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\lib\ptx\Release\deegMontecarlo_generated_draw_solid_color.cu.optixir">
+      <Filter>OptixIR Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUDA Files">
+      <UniqueIdentifier>{0487E3A8-4B6A-3B2C-B06D-087E082D920A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{19372334-FD5B-3C75-A2DE-33CBE882DC78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OptixIR Files">
+      <UniqueIdentifier>{0C25E2FC-EDE6-3BF1-B11F-E8047E1EF36F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{356141AD-166F-3754-B466-EF91B6DA0A24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

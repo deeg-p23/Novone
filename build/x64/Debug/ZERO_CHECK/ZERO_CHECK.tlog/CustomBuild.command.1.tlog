@@ -1,0 +1,10 @@
+^C:\USERS\23DIE\PROJECTS\CG PROJECTS\OPTIX\NOVONE\BUILD\CMAKEFILES\1227CFD5933E2AEECE6D5AF7048708E4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/23die/Projects/CG Projects/OptiX/Novone" "-BC:/Users/23die/Projects/CG Projects/OptiX/Novone/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/Novone.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
