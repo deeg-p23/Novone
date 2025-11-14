@@ -64,6 +64,7 @@ add_subdirectory( miniz )
 
 add_library( glad SHARED
   KHR/khrplatform.h
+  gdt/math/vec.h
   glad/glad.c
   glad/glad.h
 )

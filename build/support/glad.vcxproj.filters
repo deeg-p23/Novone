@@ -9,6 +9,9 @@
     <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\KHR\khrplatform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\gdt\math\vec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glad\glad.h">
       <Filter>Header Files</Filter>
     </ClInclude>
