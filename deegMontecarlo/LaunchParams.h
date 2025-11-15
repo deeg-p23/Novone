@@ -1,11 +1,11 @@
 #pragma once
 
-#include "gdt/math/vec.h"
 #include <cstdint>
+#include "gdt/math/vec.h"
 
 struct LaunchParams
 {
     int frameID { 0 };
     uint32_t *colorBuffer;
-    vec2i fbSize; // frame buffer size
+    gdt::vec2i fbSize; // frame buffer size
 };

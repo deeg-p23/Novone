@@ -1,7 +1,7 @@
-prefix=C:/Program Files/Novone
+prefix=C:/Program Files (x86)/Novone
 exec_prefix=${prefix}
-includedir=C:/Program Files/Novone/include
-libdir=C:/Program Files/Novone/lib
+includedir=C:/Program Files (x86)/Novone/include
+libdir=C:/Program Files (x86)/Novone/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input

@@ -12,6 +12,14 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F72E4F26-A82E-3CA7-AEA9-3BC9D23381AE}</ProjectGuid>
@@ -28,6 +36,16 @@
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
@@ -53,6 +71,18 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">imgui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">imgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">imgui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">imgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -156,6 +186,105 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.0.0\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda;C:\Users\23die\Projects\CG Projects\OptiX\Novone;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\.;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glfw-3.4\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34101 /w34189 /w34018 /w34389</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4355;4996;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;IMGUI_API=__declspec(dllexport);_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;CMAKE_INTDIR="MinSizeRel";imgui_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;IMGUI_API=__declspec(dllexport);_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";imgui_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.0.0\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda;C:\Users\23die\Projects\CG Projects\OptiX\Novone;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\.;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glfw-3.4\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.0.0\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda;C:\Users\23die\Projects\CG Projects\OptiX\Novone;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\.;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glfw-3.4\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\glfw3dll.lib;..\..\lib\MinSizeRel\glad.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/MinSizeRel/imgui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/bin/MinSizeRel/imgui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.0.0\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda;C:\Users\23die\Projects\CG Projects\OptiX\Novone;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\.;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glfw-3.4\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34101 /w34189 /w34018 /w34389</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4355;4996;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;IMGUI_API=__declspec(dllexport);_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;CMAKE_INTDIR="RelWithDebInfo";imgui_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;IMGUI_API=__declspec(dllexport);_USE_MATH_DEFINES;NOMINMAX;GLFW_DLL;GLAD_GLAPI_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";imgui_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.0.0\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda;C:\Users\23die\Projects\CG Projects\OptiX\Novone;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\.;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glfw-3.4\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ProgramData\NVIDIA Corporation\OptiX SDK 9.0.0\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\cuda;C:\Users\23die\Projects\CG Projects\OptiX\Novone;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\build;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\.;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\glfw-3.4\include;C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\glfw3dll.lib;..\..\lib\RelWithDebInfo\glad.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/lib/RelWithDebInfo/imgui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/bin/RelWithDebInfo/imgui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
@@ -185,6 +314,32 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\support\imgui\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/23die/Projects/CG Projects/OptiX/Novone/support/imgui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/23die/Projects/CG Projects/OptiX/Novone" "-BC:/Users/23die/Projects/CG Projects/OptiX/Novone/build" --check-stamp-file "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/support/imgui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\support\imgui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/23die/Projects/CG Projects/OptiX/Novone/support/imgui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/23die/Projects/CG Projects/OptiX/Novone" "-BC:/Users/23die/Projects/CG Projects/OptiX/Novone/build" --check-stamp-file "C:/Users/23die/Projects/CG Projects/OptiX/Novone/build/support/imgui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\support\imgui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +358,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\imstb_textedit.h" />
     <ClInclude Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\support\imgui\imstb_truetype.h" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="C:\Users\23die\Projects\CG Projects\OptiX\Novone\build\ZERO_CHECK.vcxproj">
       <Project>{062E17ED-BD4C-3EA1-92C4-BE172B5D14A2}</Project>
